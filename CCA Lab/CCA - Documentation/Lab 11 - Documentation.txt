@@ -1,0 +1,17 @@
+aws configure
+AWS Access Key ID [None]: xxxxxxxxxxxxxxxxxx
+AWS Secret Access Key [None]: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Default region name [None]:
+Default output format [None]:
+
+aws s3 sync s3://s3bucketsourcebucket C:\Users\himan\DropBox
+aws s3 sync C:\Users\himan\DropBox s3://s3bucketsourcebucket
+
+
+aws s3 ls s3://s3bucketsourcebucket
+
+aws s3 cp C:\Users\himan\DropBox\lab10_accessKeys.csv  s3://s3bucketsourcebucket/
+
+aws s3 sync C:\demo s3://s3bucketsourcebucket/
+
+aws s3 sync D:\demo\ s3://s3bucketsourcebucket/
